@@ -8,4 +8,21 @@
     font-style: normal;
 }
 
+.container {
+    max-width: $container;
+	margin: 0 auto;
+    @media (max-width: $maxw) {
+        max-width: none;
+        width: 100%;
+        padding: 0 30px;
+    }
+    @media (max-width: $md6) {
+        padding: 0 20px;
+    }
+}
+
+@import 'sections/_main.scss';
+@import 'sections/_header.scss';
+@import 'sections/_button.scss';
+
 @import 'media/_media.scss';

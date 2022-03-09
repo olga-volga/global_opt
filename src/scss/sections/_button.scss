@@ -1,0 +1,20 @@
+.button {
+    background-color: $accent;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 50px;
+    color: $light;
+
+    &:hover {
+        background-color: $btn-hover;
+    }
+
+    &_header {
+        width: 160px;
+        height: 45px;
+        margin-left: 19px;
+    }
+}

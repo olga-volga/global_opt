@@ -2,11 +2,13 @@
 $accent: #ec644b;
 $main: #3a3a3a;
 $light: #fff;
-$title: #2e2e2e;
+$dark: #2e2e2e;
 $bg: #f3f3f3;
+$btn-hover: #dc5238;
 
 //Fonts
-$font-main: 'Roboto', sans-serif;;
+$font-main: 'Roboto', sans-serif;
+$font-additional: 'Roboto Condensed', sans-serif;
 
 //Media breakpoints
 $md1: 1024px;
@@ -17,5 +19,5 @@ $md5: 480px;
 $md6: 425px;
 $md7: 375px;
 $minw: 320px;
-$maxw: 1440px;
+$maxw: 1200px;
 $container: 1140px;

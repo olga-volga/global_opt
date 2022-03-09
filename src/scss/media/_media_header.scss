@@ -1,0 +1,149 @@
+@media (max-width: $maxw) {
+    .header {
+        &__body {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__list {
+            li {
+                &:first-child {
+                    padding-left: 50px;
+                }
+            }
+        }
+        &__contact {
+            align-items: center;
+            margin: 0 auto;
+        }
+        &__phone {
+            display: inline-block;
+            margin-top: 0;
+            margin-left: 5px;
+        }
+    }
+}
+@media (max-width: $md2) {
+    body.lock {
+		overflow: hidden;
+	}
+	.header {
+        &__body {
+            justify-content: space-between;
+        }
+        &__logo {
+            img {
+                max-width: 70px;
+            }
+        }
+        &__contact {
+            margin: 0;
+        }
+        &__phone {
+            display: block;
+            margin-top: 5px;
+            margin-left: 0;
+        }
+		&__burger {
+			display: block;
+			position: relative;
+			top: 0;
+			width: 30px;
+			height: 20px;
+			z-index: 100;
+			span {
+				position: absolute;
+				background-color: $light;
+				width: 100%;
+				height: 2px;
+				left: 0;
+				top: 9px;
+				transition: all 0.3s ease 0s;
+			}
+		}
+		&__burger:before,
+		&__burger:after {
+			content: '';
+			background-color: $light;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			left: 0;
+			transition: all 0.3s ease 0s;
+		}
+		&__burger:before {
+			top: 0;
+		}
+		&__burger:after {
+			bottom: 0;
+		}
+		&__burger.active span {
+			transform: scale(0);
+		}
+		&__burger.active:before {
+			transform: rotate(45deg);
+			top: 9px;
+		}
+		&__burger.active:after {
+			transform: rotate(-45deg);
+			bottom: 9px;
+		}
+		&__menu {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: -100%;
+			overflow: auto;
+			background-color: $main;
+			padding: 110px 30px 30px;
+			margin-left: 0;
+			transition: all 0.3s ease 0s;
+			z-index: 50;
+		}
+		&__menu.active {
+			top: 0;
+		}
+		&__list {
+			flex-direction: column;
+			align-items: center;
+			li {
+				border-left: 0;
+                padding: 20px;
+
+                &:first-child {
+                    padding-left: 20px;
+                }
+			}
+		}
+        &__link {
+            font-size: 18px;
+            line-height: 19px;
+        }
+	}
+}
+@media (max-width: $md4) {
+    .header {
+        &__contact {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__text {
+            span {
+                display: none;
+            }
+        }
+        &__phone {
+            font-size: 14px;
+            margin-top: 0;
+        }
+    }
+}
+@media (max-width: $md6) {
+    .header {
+        &__logo {
+            img {
+                max-width: 60px;
+            }
+        }
+    }
+}

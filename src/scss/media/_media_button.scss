@@ -1,0 +1,10 @@
+.button {
+    @media (max-width: $md4) {
+        &_header {
+            width: 150px;
+            height: 35px;
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+}
