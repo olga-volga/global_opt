@@ -1,0 +1,29 @@
+.advantages {
+
+	@media (max-width: $md1) {
+		&__body {
+			flex-direction: column;
+			align-items: center;
+			margin: -4px 0 0 0;
+		}
+		.advantages-item {
+			flex: auto;
+			max-width: 500px;
+			margin: 36px 0 0 0;
+		}
+	}
+	@media (max-width: $md6) {
+		.advantages-item {
+			flex-direction: column;
+			align-items: center;
+
+			&__img {
+				margin-right: 0;
+			}
+			&__title,
+			&__descr {
+				text-align: center;
+			}
+		}
+	}
+}

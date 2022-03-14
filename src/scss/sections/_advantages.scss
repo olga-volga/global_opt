@@ -1,0 +1,35 @@
+.advantages {
+	padding: 51px 0 58px;
+
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -4px -50px 0 0;
+	}
+	.advantages-item {
+		display: flex;
+		align-items: flex-start;
+		flex: calc(50% - 50px);
+		margin: 36px 50px 0 0;
+
+		&__img {
+			display: block;
+			max-width: 100%;
+			margin-right: 20px;
+		}
+		&__txt {}
+		&__title {
+			font-size: 16px;
+			line-height: 22px;
+			font-weight: 700;
+			color: $accent;
+		}
+		&__descr {
+			font-size: 14px;
+			line-height: 22px;
+			font-weight: 300;
+			color: $main;
+			margin-top: 5px;
+		}
+	}
+}
