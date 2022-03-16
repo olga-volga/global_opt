@@ -1,0 +1,14 @@
+.about {
+	@media (max-width: $md1) {
+		&__body {
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: -3px -15px 0;
+
+		}
+		.about-column {
+			flex: auto;
+			margin-top: 40px;
+		}
+	}
+}
