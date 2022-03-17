@@ -1,0 +1,17 @@
+.agent {
+	background-image: linear-gradient(rgba($dark, 0.7), rgba($dark, 0.7)), url('img/agent/bg.jpg');
+    background-position: 50% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+	padding: 58px 0 75px;
+
+	&__text {
+		max-width: 990px;
+		font-size: 19px;
+		line-height: 27px;
+		font-weight: 300;
+		text-align: center;
+		color: $light;
+		margin: 22px auto 0;
+	}
+}

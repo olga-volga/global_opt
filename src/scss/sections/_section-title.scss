@@ -5,4 +5,10 @@
 	text-transform: uppercase;
 	text-align: center;
 	color: $dark;
+
+	&_white {
+		text-transform: none;
+		color: $light;
+		margin-top: 20px;
+	}
 }
