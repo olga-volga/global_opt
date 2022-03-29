@@ -11,4 +11,8 @@
 	img {
 		max-width: 100%;
 	}
+
+	&_orange {
+		border: 1px solid $accent;
+	}
 }

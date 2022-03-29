@@ -1,0 +1,22 @@
+.consultation {
+	@media (max-width: $md2) {
+		.form {
+			margin-top: -15px;
+
+			&__input {
+				margin-top: 15px;
+			}
+		}
+	}
+	@media (max-width: $md6) {
+		&__form {
+			padding: 67px 20px 52px;
+		}
+		.form {
+			&__input {
+				width: 100%;
+				padding-left: 20px;
+			}
+		}
+	}
+}
