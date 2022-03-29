@@ -1,0 +1,13 @@
+.prices {
+	@media (max-width: $maxw) {
+		&__body {
+			max-width: 600px;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin: 4px auto 0;
+		}
+		&__column {
+			margin: 30px 12px 0;
+		}
+	}
+}

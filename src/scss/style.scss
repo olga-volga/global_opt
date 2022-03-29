@@ -11,6 +11,7 @@
 .container {
     max-width: $container;
 	margin: 0 auto;
+
     @media (max-width: $maxw) {
         max-width: none;
         width: 100%;
@@ -31,5 +32,6 @@
 @import 'sections/_section-descr.scss';
 @import 'sections/_agent.scss';
 @import 'sections/_section-icon.scss';
+@import 'sections/_prices.scss';
 
 @import 'media/_media.scss';
